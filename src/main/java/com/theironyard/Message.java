@@ -1,6 +1,7 @@
 package com.theironyard;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -15,9 +16,6 @@ public class Message {
 
     @Column(nullable = false)
         String messageText;
-
-    @Column(nullable = false)
-        int userId;
 
     public Message (int i, String t){
         this.messageId = i;
